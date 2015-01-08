@@ -5,7 +5,9 @@
  */
 
 $("document").ready(function(){
-    $(".whatdoyouwanttoput").css("background-color", "yellow");
-    $("p").css("background-color", "orange");
+    $(".whatdoyouwanttoput").css("background-color", "aqua");
+    $("p").css("background-color", "red");
+    $("h3").css("background-color", "lime");
+    
 });
 
