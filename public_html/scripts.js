@@ -7,7 +7,15 @@
 $("document").ready(function(){
     $(".whatdoyouwanttoput").css("background-color", "aqua");
     $("p").css("background-color", "red");
-    $("h3").css("background-color", "lime");
+    $("h1").css("background-color", "lime");
+    $("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
     
 });
 
+function mouseOverMe() {
+    $("h1").html("Morgan Freeman");
+}
+
+function mouseOutMe() {
+    $("h1").html("Turtles");
+}
