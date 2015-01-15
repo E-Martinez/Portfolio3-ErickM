@@ -9,11 +9,12 @@ $("document").ready(function(){
     $("p").css("background-color", "red");
     $("h1").css("background-color", "lime");
     $("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
+    $('#superHumans').accordion({header: "h3"});
     
 });
 
 function mouseOverMe() {
-    $("h1").html("Morgan Freeman");
+    $("h1").html("Morgan Freemann");
 }
 
 function mouseOutMe() {
