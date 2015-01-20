@@ -10,6 +10,8 @@ $("document").ready(function(){
     $("h1").css("background-color", "lime");
     $("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
     $('#superHumans').accordion({header: "h3"});
+    $('#slideAway').bind('click', slideTheImage);
+    $('#slideBack').bind('click', unslideTheImage);
     
 });
 
@@ -19,4 +21,12 @@ function mouseOverMe() {
 
 function mouseOutMe() {
     $("h1").html("Turtles");
+}
+
+function slideTheImage() {
+    $('#slide').slideUp(2500);
+}
+
+function unslideTheImage() {
+    $('#slide').slideDown(2500);
 }
