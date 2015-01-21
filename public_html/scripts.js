@@ -1,10 +1,6 @@
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-$("document").ready(function(){
+
+$("document").ready(function() {
     $(".whatdoyouwanttoput").css("background-color", "aqua");
     $("p").css("background-color", "red");
     $("h1").css("background-color", "lime");
@@ -12,7 +8,11 @@ $("document").ready(function(){
     $('#superHumans').accordion({header: "h3"});
     $('#slideAway').bind('click', slideTheImage);
     $('#slideBack').bind('click', unslideTheImage);
-    
+    $('#addAPara').bind('click', addAPara);
+    $('#removeAPara').bind('click', removeAPara);
+    /*
+     * 
+     */
 });
 
 function mouseOverMe() {
@@ -29,4 +29,12 @@ function slideTheImage() {
 
 function unslideTheImage() {
     $('#slide').slideDown(750);
+}
+
+function addAPara() {
+    $('#Hi').append('<p>Sample text</p>');
+}
+
+function removeAPara() {
+    $('#Hi p:last').remove();
 }
