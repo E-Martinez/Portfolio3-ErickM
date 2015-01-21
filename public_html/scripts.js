@@ -24,9 +24,9 @@ function mouseOutMe() {
 }
 
 function slideTheImage() {
-    $('#slide').slideUp(2500);
+    $('#slide').slideUp(300);
 }
 
 function unslideTheImage() {
-    $('#slide').slideDown(2500);
+    $('#slide').slideDown(750);
 }
