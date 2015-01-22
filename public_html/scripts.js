@@ -1,22 +1,26 @@
 
-
 $("document").ready(function() {
+    $('#superHumans').accordion({header: "h3"});
     $(".whatdoyouwanttoput").css("background-color", "aqua");
     $("p").css("background-color", "red");
     $("h1").css("background-color", "lime");
+    /*
+     * Makes the colors on my page.
+     */
     $("h1").bind('mouseover', mouseOverMe).bind('mouseout', mouseOutMe);
-    $('#superHumans').accordion({header: "h3"});
+    $('#slideBack').bind('click', unslideTheImage);
+    $('#addAPara').bind('click', addAPara);
     $('#slideAway').bind('click', slideTheImage);
     $('#slideBack').bind('click', unslideTheImage);
     $('#addAPara').bind('click', addAPara);
     $('#removeAPara').bind('click', removeAPara);
     /*
-     * 
+     * Binds all the buttons so they work.
      */
 });
 
 function mouseOverMe() {
-    $("h1").html("Morgan Freemann");
+    $("h1").html("Morgan Freeman");
 }
 
 function mouseOutMe() {
